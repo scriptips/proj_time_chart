@@ -369,7 +369,7 @@ while True:
                                                     'format': pink_weekends_form})
 
                 # Determine the longest string in the Employee column.
-                fitt_name_str_max = group_it['Fitter'].str.len().max()
+                fitt_name_str_max = group_it['Fitter'].str.len().max() + 2
 
                 xrt_ws.set_column("A:"+xl_col_to_name(len(group_it.columns)),iso_netw_switch_cwidth)
                 xrt_ws.set_column(xl_col_to_name(1)+":"+xl_col_to_name(1), fitt_name_str_max)
